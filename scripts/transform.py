@@ -5,9 +5,9 @@ import os
 from scripts.utils.aux_funcs import *
 
 
-def dataprep_viz(input='../spotify-listening-data/data/raw/Spotify',
-                 output='../spotify-listening-data/data/clean/Spotify/streaming_data.parquet',
-                 output_auxtracksdata='../spotify-listening-data/data/clean/Spotify/aux_tracksdata.parquet'):
+def dataprep_viz(input='../spotify-listening-data/data/raw',
+                 output='../spotify-listening-data/data/clean/streaming_data.parquet',
+                 output_auxtracksdata='../spotify-listening-data/data/clean/aux_tracksdata.parquet'):
     
     '''
     Function for the first step of the data pipeline.

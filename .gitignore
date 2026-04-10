@@ -1,2 +1,5 @@
 .venv
-__pycache__
+.env
+scripts/__pycache__
+scripts/constants/__pycache__
+scripts/utils/__pycache__

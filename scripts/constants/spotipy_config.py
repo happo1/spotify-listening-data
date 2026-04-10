@@ -1,7 +1,16 @@
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-from scripts.constants.auth_spotifykey import CLIENT_ID, CLIENT_SECRET
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+
+if not CLIENT_ID or not CLIENT_SECRET:
+    raise ValueError("Missing environment variables")
 
 def get_spotify_client():
     

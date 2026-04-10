@@ -62,7 +62,7 @@ def data_enrichment():
 
     # Load input data
     try:
-        df = pd.read_parquet("data/clean/Spotify/aux_tracksdata.parquet")
+        df = pd.read_parquet("data/clean/aux_tracksdata.parquet")
     except FileNotFoundError:
         raise SystemExit("❌ File 'aux_tracksdata.parquet' not found.")
 
